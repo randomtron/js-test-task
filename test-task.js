@@ -1,7 +1,7 @@
 function serialize(numbers) {
   if (!numbers.length) return "";
   
-  numbers = [...new Set(numbers)].sort((a, b) => a - b); // Убираем дубликаты и сортируем
+  numbers = [...new Set(numbers)].sort((a, b) => a - b);
   let result = [];
   let start = numbers[0], prev = numbers[0];
 
@@ -30,7 +30,6 @@ function deserialize(str) {
   });
 }
 
-// Тесты
 const testCases = [
   [1, 2, 3, 4, 5, 10, 11, 12, 100, 101, 102, 200, 300],
   [1, 3, 5, 7, 9, 11],
