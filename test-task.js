@@ -45,5 +45,4 @@ testCases.forEach(tc => {
   console.log(`Compressed: "${compressed}"`);
   console.log(`Decompressed: ${decompressed}`);
   console.log(`Compression ratio: ${(tc.join(",").length / compressed.length).toFixed(2)}`);
-  console.log("====================================");
 });
